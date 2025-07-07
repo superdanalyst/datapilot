@@ -335,7 +335,7 @@ with tab3:
                             # --- Regression Metrics ---
                             st.markdown("### OLS Regression Results")
                             st.metric("R² (Test)", f"{r2_score(y_test, y_pred):.4f}")
-                            st.metric("RMSE", f"{np.sqrt(mean_squared_error(y_test, preds)):.4f}")
+                            st.metric("RMSE", f"{np.sqrt(mean_squared_error(y_test, y_pred)):.4f}")
     
                             # --- Model Summary ---
                             with st.expander("Show OLS Summary"):
